@@ -1065,7 +1065,7 @@ void algo::i32_Range_Print(algo::i32_Range &r, cstring &o) {
 
 void double_Print(double d, cstring &str) {
     char c[128];
-    ch_Addary(str, strptr(c,sprintf(c,"%g",d)));
+    ch_Addary(str, strptr(c,snprintf(c,sizeof(c),"%g",d)));
 }
 
 void float_Print(float d, cstring &str) {
